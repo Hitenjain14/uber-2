@@ -5,7 +5,7 @@ import { auth } from '../firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { useRouter } from 'next/router';
 
-function search() {
+function Search() {
   const router = useRouter();
   const [pickup, setPickup] = useState('');
   const [dropoff, setDropoff] = useState('');
@@ -125,4 +125,4 @@ const PlusIcon = tw.img`
 w-10 h-10 font-medium bg-gray-200 rounded-full ml-3
 `;
 
-export default search;
+export default Search;

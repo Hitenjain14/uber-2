@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { auth } from '../firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
-function confirm() {
+function Confirm() {
   const router = useRouter();
   const { pickup, dropoff } = router.query;
   const [pickupCoordinates, setPickupCoordinates] = useState();
@@ -102,4 +102,4 @@ const BackButton = tw.img`
 h-3/4 object-contain
 `;
 
-export default confirm;
+export default Confirm;
